@@ -7,6 +7,10 @@ DB_DATABASE=laravel --- chỉnh này
 DB_USERNAME=root
 DB_PASSWORD=
 //
+php artisan migrate -- tạo csdl
+thêm dữ liệu cho book 
+vào bookseeder thêm dữ liệu chạy lại php artisan db:seed --class=BookSeeder
+//
 muốn đổi csdl chỉnh trong các file 
 BookController
 migrations
@@ -17,3 +21,4 @@ route
 chỉnh xong chạy 
 php artisan migrate:refresh --seed
 để refresh dữ liệu
+http://localhost:8000/search để chạy
